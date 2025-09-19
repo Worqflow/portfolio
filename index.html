@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <style>
+        .hero-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0ea5e9 100%);
+        }
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: -38px;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #3b82f6;
+            border: 3px solid #bfdbfe;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-gray-50">
+    <!-- Hero Section -->
+    <div id="hero" class="hero-bg text-white min-h-screen flex items-center relative overflow-hidden">
+        <div class="absolute inset-0 z-0" id="vanta-bg"></div>
+        <div class="container mx-auto px-6 z-10 relative">
+            <div class="flex flex-col md:flex-row items-center py-20">
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">Hello, I'm <span class="text-blue-200">Your Name</span></h1>
+                    <p class="text-xl md:text-2xl mb-8 text-blue-100">Cloud Security | Web Development | Fintech Solutions</p>
+                    <div class="flex space-x-4">
+                        <a href="#about" class="px-6 py-3 bg-white text-blue-600 rounded-lg font-semibold hover:bg-blue-50 transition">About Me</a>
+                        <a href="#contact" class="px-6 py-3 border border-white text-white rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition">Contact</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center" data-aos="fade-left">
+                    <div class="w-64 h-64 md:w-80 md:h-80 rounded-full bg-white/10 backdrop-blur-sm border-2 border-white/20 flex items-center justify-center">
+                        <i data-feather="user" class="w-32 h-32"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16" data-aos="fade-up">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                    <p class="text-lg mb-6 leading-relaxed">
+                        Curious, driven, and technically adept professional with hands-on experience across cloud security, web development, IT operations, fintech, and ed-tech solutions.
+                    </p>
+                    <p class="text-lg mb-6 leading-relaxed">
+                        Skilled in securing multi-cloud environments, building user-centric platforms, and managing IT systems and financial operations. Adept at leveraging tools to improve security posture, efficiency, and decision-making.
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        Eager to contribute to innovative, remote-first teams solving real-world challenges.
+                    </p>
+                </div>
+                <div class="md:w-1/2 md:pl-12" data-aos="fade-left">
+                    <div class="bg-gray-100 p-8 rounded-xl">
+                        <h3 class="text-xl font-semibold mb-4 text-blue-600">Key Skills</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="flex items-center">
+                                <i data-feather="cloud" class="mr-2 text-blue-500"></i>
+                                <span>Cloud Security</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i data-feather="code" class="mr-2 text-blue-500"></i>
+                                <span>Web Development</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i data-feather="database" class="mr-2 text-blue-500"></i>
+                                <span>Data Analytics</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i data-feather="shield" class="mr-2 text-blue-500"></i>
+                                <span>Cybersecurity</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i data-feather="dollar-sign" class="mr-2 text-blue-500"></i>
+                                <span>Fintech Solutions</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i data-feather="book" class="mr-2 text-blue-500"></i>
+                                <span>Ed-Tech</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16" data-aos="fade-up">Technical Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Cloud & Security -->
+                <div class="bg-white p-6 rounded-xl shadow-md skill-card transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <div class="p-3 bg-blue-100 rounded-lg mr-4">
+                            <i data-feather="cloud" class="text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Cloud & Security</h3>
+                    </div>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i data-feather="check" class="mr-2 text-green-500"></i>
+                            GCP, AWS, Azure
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="mr-2 text-green-500"></i>
+                            Wiz.io, Terraform
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="mr-2 text-green-500"></i>
+                            Microsoft Defender EDR/XDR
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="mr-2 text-green-500"></i>
+                            Sentinel
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Development -->
+                <div class="bg-white p-6 rounded-xl shadow-md skill-card transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <div class="p-3 bg-blue-100 rounded-lg mr-4">
+                            <i data-feather="code" class="text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Development</h3>
+                    </div>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i data-feather="check" class="mr-2 text-green-500"></i>
+                            HTML, CSS, JavaScript
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="mr-2 text-green-500"></i>
+                            React, Node.js
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="mr-2 text-green-500"></i>
+                            Website Management
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="mr-2 text-green-500"></i>
+                            API Integration
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Data & Analytics -->
+                <div class="bg-white p-6 rounded-xl shadow-md skill-card transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center mb-4">
+                        <div class="p-3 bg-blue-100 rounded-lg mr-4">
+                            <i data-feather="bar-chart-2" class="text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Data & Analytics</h3>
+                    </div>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i data-feather="check" class="mr-2 text-green-500"></i>
+                            Power BI, Tableau
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="mr-2 text-green-500"></i>
+                            Data Entry & Analysis
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="mr-2 text-green-500"></i>
+                            Financial Reporting
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="mr-2 text-green-500"></i>
+                            Compliance Monitoring
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Tools -->
+                <div class="bg-white p-6 rounded-xl shadow-md skill-card transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <div class="p-3 bg-blue-100 rounded-lg mr-4">
+                            <i data-feather="tool" class="text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Tools</h3>
+                    </div>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i data-feather="check" class="mr-2 text-green-500"></i>
+                            Git, GitHub, GitLab
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="mr-2 text-green-500"></i>
+                            Jira, Confluence
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="mr-2 text-green-500"></i>
+                            Datadog
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="mr-2 text-green-500"></i>
+                            Microsoft 365 Suite
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- IT & Admin -->
+                <div class="bg-white p-6 rounded-xl shadow-md skill-card transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <div class="p-3 bg-blue-100 rounded-lg mr-4">
+                            <i data-feather="settings" class="text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">IT & Administration</h3>
+                    </div>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i data-feather="check" class="mr-2 text-green-500"></i>
+                            IT Systems Management
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="mr-2 text-green-500"></i>
+                            Salary Processing
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="mr-2 text-green-500"></i>
+                            Financial Records
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="mr-2 text-green-500"></i>
+                            Correspondence Management
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Other -->
+                <div class="bg-white p-6 rounded-xl shadow-md skill-card transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center mb-4">
+                        <div class="p-3 bg-blue-100 rounded-lg mr-4">
+                            <i data-feather="award" class="text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Certifications</h3>
+                    </div>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i data-feather="check" class="mr-2 text-green-500"></i>
+                            Google Digital Garage
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="mr-2 text-green-500"></i>
+                            Cloud Security Training
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="mr-2 text-green-500"></i>
+                            Cybersecurity Mentorship
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16" data-aos="fade-up">Professional Experience</h2>
+            
+            <div class="relative max-w-3xl mx-auto">
+                <!-- Timeline line -->
+                <div class="absolute left-0 md:left-1/2 h-full w-0.5 bg-gray-200 transform -translate-x-1/2"></div>
+                
+                <!-- Timeline items -->
+                <div class="space-y-12">
+                    <!-- Item 1 -->
+                    <div class="relative pl-10 md:pl-0 md:flex justify-between" data-aos="fade-up">
+                        <div class="md:w-5/12 mb-6 md:mb-0"></div>
+                        <div class="md:w-5/12 relative">
+                            <div class="p-6 bg-blue-50 rounded-lg shadow-sm">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h3 class="text-xl font-semibold text-blue-700">Chief Technology Officer</h3>
+                                    <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">2024 - Present</span>
+                                </div>
+                                <p class="text-blue-900 font-medium mb-2">Forge Intellitech Services Limited</p>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start">
+                                        <i data-feather="chevron-right" class="mr-2 text-blue-500 mt-0.5 flex-shrink-0"></i>
+                                        <span>Lead technology strategy for an ed-tech start-up scaling from 1 to 15 schools</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-feather="chevron-right" class="mr-2 text-blue-500 mt-0.5 flex-shrink-0"></i>
+                                        <span>Developed solutions including School Management System and RFID/fingerprint-based attendance systems</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-feather="chevron-right" class="mr-2 text-blue-500 mt-0.5 flex-shrink-0"></i>
+                                        <span>Coordinated digital curriculum design for teaching tech skills</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="relative pl-10 md:pl-0 md:flex justify-between" data-aos="fade-up">
+                        <div class="md:w-5/12 relative">
+                            <div class="p-6 bg-blue-50 rounded-lg shadow-sm">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h3 class="text-xl font-semibold text-blue-700">Co-Founder</h3>
+                                    <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">2023 - Present</span>
+                                </div>
+                                <p class="text-blue-900 font-medium mb-2">VectorPay Payment Solutions</p>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start">
+                                        <i data-feather="chevron-right" class="mr-2 text-blue-500 mt-0.5 flex-shrink-0"></i>
+                                        <span>Using fintech platforms to enable clients to receive USD/GBP payments and settle in NGN</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-feather="chevron-right" class="mr-2 text-blue-500 mt-0.5 flex-shrink-0"></i>
+                                        <span>Improved financial operations and transparency for client transactions</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="md:w-5/12"></div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="relative pl-10 md:pl-0 md:flex justify-between" data-aos="fade-up">
+                        <div class="md:w-5/12 mb-6 md:mb-0"></div>
+                        <div class="md:w-5/12 relative">
+                            <div class="p-6 bg-blue-50 rounded-lg shadow-sm">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h3 class="text-xl font-semibold text-blue-700">Cybersecurity Intern</h3>
+                                    <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">2023 - 2025</span>
+                                </div>
+                                <p class="text-blue-900 font-medium mb-2">Remote Mentorship</p>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start">
+                                        <i data-feather="chevron-right" class="mr-2 text-blue-500 mt-0.5 flex-shrink-0"></i>
+                                        <span>Trained in cloud security using Wiz.io and Microsoft Defender (EDR/XDR)</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-feather="chevron-right" class="mr-2 text-blue-500 mt-0.5 flex-shrink-0"></i>
+                                        <span>Conducted vulnerability scans and security posture reviews</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-feather="chevron-right" class="mr-2 text-blue-500 mt-0.5 flex-shrink-0"></i>
+                                        <span>Built Power BI dashboards for compliance monitoring and data analysis</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="relative pl-10 md:pl-0 md:flex justify-between" data-aos="fade-up">
+                        <div class="md:w-5/12 relative">
+                            <div class="p-6 bg-blue-50 rounded-lg shadow-sm">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h3 class="text-xl font-semibold text-blue-700">IT & Admin Assistant</h3>
+                                    <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">2020 - Present</span>
+                                </div>
+                                <p class="text-blue-900 font-medium mb-2">Gladys Schools</p>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start">
+                                        <i data-feather="chevron-right" class="mr-2 text-blue-500 mt-0.5 flex-shrink-0"></i>
+                                        <span>Designed and maintained the school website under PTA supervision</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-feather="chevron-right" class="mr-2 text-blue-500 mt-0.5 flex-shrink-0"></i>
+                                        <span>Assist with employee salaries, financial records, and reporting</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-feather="chevron-right" class="mr-2 text-blue-500 mt-0.5 flex-shrink-0"></i>
+                                        <span>Draft and manage correspondence with banks and external organizations</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="md:w-5/12"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16" data-aos="fade-up">Education</h2>
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-sm" data-aos="fade-up">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-semibold text-blue-700">Higher National Diploma</h3>
+                        <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">2025</span>
+                    </div>
+                    <p class="text-gray-700 font-medium mb-2">Mechanical Engineering (Lower Credits)</p>
+                    <p class="text-gray-600">Yaba College Of Technology, Lagos State</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-semibold text-blue-700">National Diploma</h3>
+                        <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">2021</span>
+                    </div>
+                    <p class="text-gray-700 font-medium mb-2">Mechanical Engineering (Lower Credits)</p>
+                    <p class="text-gray-600">The Polytechnic Ibadan, Oyo State</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-blue-600 text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16" data-aos="fade-up">Get In Touch</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div data-aos="fade-right">
+                        <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i data-feather="mail" class="mr-4 mt-1"></i>
+                                <div>
+                                    <p class="font-medium">Email</p>
+                                    <p class="text-blue-100">your.email@example.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-feather="github" class="mr-4 mt-1"></i>
+                                <div>
+                                    <p class="font-medium">GitHub</p>
+                                    <p class="text-blue-100">github.com/yourusername</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-feather="linkedin" class="mr-4 mt-1"></i>
+                                <div>
+                                    <p class="font-medium">LinkedIn</p>
+                                    <p class="text-blue-100">linkedin.com/in/yourprofile</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left">
+                        <h3 class="text-xl font-semibold mb-4">Send Me a Message</h3>
+                        <form class="space-y-4">
+                            <div>
+                                <label for="name" class="block mb-1">Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 rounded bg-blue-500 border border-blue-400 placeholder-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-300">
+                            </div>
+                            <div>
+                                <label for="email" class="block mb-1">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 rounded bg-blue-500 border border-blue-400 placeholder-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-300">
+                            </div>
+                            <div>
+                                <label for="message" class="block mb-1">Message</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 rounded bg-blue-500 border border-blue-400 placeholder-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-300"></textarea>
+                            </div>
+                            <button type="submit" class="px-6 py-3 bg-white text-blue-600 rounded-lg font-semibold hover:bg-blue-50 transition">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-blue-200 py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p>&copy; 2024 Your Name. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://github.com/Worqflow/portfolio" class="hover:text-white transition">
+                        <i data-feather="github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/hafoo/" class="hover:text-white transition">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                    <a href="https://x.com/MCHarfoo" class="hover:text-white transition">
+                        <i data-feather="twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize animations
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Initialize Vanta.js background
+        VANTA.GLOBE({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x3b82f6,
+            backgroundColor: 0x1e3a8a,
+            size: 0.8
+        });
+
+        // Feather icons
+        feather.replace();
+    </script>
+</body>
+</html>
