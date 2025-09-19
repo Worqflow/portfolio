@@ -11,6 +11,9 @@
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
         .hero-bg {
             background: linear-gradient(135deg, #1e3a8a 0%, #0ea5e9 100%);
         }
@@ -459,18 +462,18 @@
                     </div>
                     <div data-aos="fade-left">
                         <h3 class="text-xl font-semibold mb-4">Send Me a Message</h3>
-                        <form class="space-y-4">
+                        <form action="https://formspree.io/f/mldwqlna" method="post" class="space-y-4">
                             <div>
                                 <label for="name" class="block mb-1">Name</label>
-                                <input type="text" id="name" class="w-full px-4 py-2 rounded bg-blue-500 border border-blue-400 placeholder-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-300">
+                                <input type="text" id="name" name="name" class="w-full px-4 py-2 rounded bg-blue-500 border border-blue-400 placeholder-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-300" required>
                             </div>
                             <div>
                                 <label for="email" class="block mb-1">Email</label>
-                                <input type="email" id="email" class="w-full px-4 py-2 rounded bg-blue-500 border border-blue-400 placeholder-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-300">
+                                <input type="email" id="email" name="email" class="w-full px-4 py-2 rounded bg-blue-500 border border-blue-400 placeholder-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-300" required>
                             </div>
                             <div>
                                 <label for="message" class="block mb-1">Message</label>
-                                <textarea id="message" rows="4" class="w-full px-4 py-2 rounded bg-blue-500 border border-blue-400 placeholder-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-300"></textarea>
+                                <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 rounded bg-blue-500 border border-blue-400 placeholder-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-300" required></textarea>
                             </div>
                             <button type="submit" class="px-6 py-3 bg-white text-blue-600 rounded-lg font-semibold hover:bg-blue-50 transition">Send Message</button>
                         </form>
